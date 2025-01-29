@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Container with Natural Theme */
+body {
+    background: linear-gradient(to bottom, #A3E4D7, #D5F5E3); /* Light green gradient for natural feel */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Form Container */
+.container {
+    max-width: 90%;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white for form container */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* Heading and Description */
+.container h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #051344; /* Deep green for nature feel */
+}
+
+.container p {
+    font-size: 1rem;
+    color: #0c195f; /* Muted green tone */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #A9DFBF; /* Soft green border */
+    outline: none;
+    background-color: #F4F6F7; /* Subtle light gray for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1E8449; /* Darker green on focus */
+    box-shadow: 0 0 8px rgba(30, 132, 73, 0.5);
+}
+
+textarea {
+    resize: none;
+    height: 100px; /* Standard height for message area */
+}
+
+/* Submit Button */
+.btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1E8449; /* Vibrant green button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #28B463;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #145A32;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input, textarea {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
